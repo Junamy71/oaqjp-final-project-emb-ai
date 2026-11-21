@@ -14,7 +14,7 @@ def emot_detector():
         f"'anger': {response['anger']}, "
         f"'disgust': {response['disgust']}, "
         f"'fear': {response['fear']}, "
-        f"'joy': {response['joy']} and "
+        f"'joy': {response['joy']}, "
         f"'sadness': {response['sadness']}, "
         f"'dominant_emotion': {response['dominant_emotion']}"
     )
