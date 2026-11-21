@@ -11,9 +11,12 @@ def emot_detector():
     response = emotion_detector(text_to_analyze)
 
     return (
-
-
-      
+        f"'anger': {response['anger']}, "
+        f"'disgust': {response['disgust']}, "
+        f"'fear': {response['fear']}, "
+        f"'joy': {response['joy']} and "
+        f"'sadness': {response['sadness']}, "
+        f"'dominant_emotion': {response['dominant_emotion']}"
     )
 
 @app.route("/")
