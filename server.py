@@ -5,7 +5,7 @@ from emotionDetection.emotion_detection import emotion_detector
 
 app = Flask("Emotion Detector")
 
-@app.route("/emotionDector")
+@app.route("/emotionDetector")
 def emot_detector():
     text_to_analyze = request.args.get("textToAnalyze")
     response = emotion_detector(text_to_analyze)
