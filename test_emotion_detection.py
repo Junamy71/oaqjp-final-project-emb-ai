@@ -8,15 +8,15 @@ class TestEmotionDetector(unittest.TestCase):
         self.assertEqual(result['dominant_emotion'], 'JOY')
     def test_anger_detector(self):
         result = emotion_detector('I am really mad about this')
-        self.assertEqual(result['dominant_emotion'], 'anger')
+        self.assertEqual(result['dominant_emotion'], 'ANGER')
     def test_disgust_detector(self):
         result = emotion_detector('I feel disgusted just hearing about this')
-        self.assertEqual(result['dominant_emotion'], 'disgust')
+        self.assertEqual(result['dominant_emotion'], 'DISGUST')
     def test_sadness_detector(self):
         result = emotion_detector('I am so sad about this')
-        self.assertEqual(result['dominant_emotion'], 'sadness')
+        self.assertEqual(result['dominant_emotion'], 'SADNESS')
     def test_fear_detector(self):
         result = emotion_detector('I am really afraid that this will happen')
-        self.assertEqual(result['dominant_emotion'], 'fear')
+        self.assertEqual(result['dominant_emotion'], 'FEAR')
 
 unittest.main()
